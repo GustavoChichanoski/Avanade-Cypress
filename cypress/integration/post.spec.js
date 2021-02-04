@@ -3,7 +3,7 @@ describe('Post', () => {
         cy.login('a@a.com.br','12345678');
     });
     it('Novo', () => {
-        const title = 'Cypress E2E';
+        const title = 'Cypress Hill E2E';
         cy.contains('New Article').click();
         cy.location('pathname').should('equal','/editor');
         cy.get('[formcontrolname=title]').type(title);
